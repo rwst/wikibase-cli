@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 const program = require('@wikibasejs/commander')
 program.customArgsParser = require('../lib/entity_command_args_parser')
+program.customHelpOption = require('../lib/entity_custom_help_option')
 require('../lib/edit/edit_command')('entity', 'edit')
